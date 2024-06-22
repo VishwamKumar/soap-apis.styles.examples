@@ -1,0 +1,29 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>true</ImplicitUsings>
+	<Authors>Vishwa Kumar</Authors>
+	<Company>Vishwam</Company>
+	<Product>ToDoApp</Product>
+  </PropertyGroup> 
+  <ItemGroup>
+    <None Include="nuget.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Using Include="CoreWCF" />
+    <Using Include="CoreWCF.Configuration" />
+    <Using Include="CoreWCF.Channels" />
+    <Using Include="CoreWCF.Description" />
+    <Using Include="System.Runtime.Serialization " />
+    <Using Include="ToDoApp.SoapApi.CoreWcf" />
+    <Using Include="Microsoft.Extensions.DependencyInjection.Extensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="13.0.1" />
+    <PackageReference Include="CoreWCF.Http" Version="1.5.2" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ToDoApp.DataLibrary.Sqlite\ToDoApp.DataLibrary.Sqlite.csproj" />
+  </ItemGroup>
+</Project>

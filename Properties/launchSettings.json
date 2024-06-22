@@ -1,0 +1,11 @@
+{
+  "profiles": {
+    "ToDoApp.SoapApi.CoreWcf": {
+      "commandName": "Project",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      },
+      "applicationUrl": "https://localhost:7172;http://localhost:5138"
+    }
+  }
+}
