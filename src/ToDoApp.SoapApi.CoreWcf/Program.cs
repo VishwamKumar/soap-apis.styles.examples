@@ -1,13 +1,16 @@
 ﻿
 var builder = WebApplication.CreateBuilder();
 
+builder.Services.AddAutoMapper(cfg =>
+{
+    cfg.AddMaps(AppDomain.CurrentDomain.GetAssemblies());
+});
 builder.Services.AddServiceModelServices();
 builder.Services.AddServiceModelMetadata();
 builder.Services.AddSingleton<IServiceBehavior, UseRequestHeadersForMetadataAddressBehavior>();
 
 builder.Services.AddScoped<ITodoService, ToDoService>();
 builder.Services.AddScoped<ToDoCoreWcfService>(); //DO NOT ADD INTERFACE HERE, IT WON'T WORK FOR Core WCF SERVICE
-builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
 builder.Services.AddDbContext<AppDbContext>(opt => opt.UseSqlite(builder.Configuration.GetConnectionString("SqliteConnection")));
 builder.Services.AddLogging();
 
