@@ -25,7 +25,7 @@ Vishwa is the primary developer and architect of the ToDoApp, responsible for th
 
 1. **Clone the repository**:
    ```bash
-   git clone https://github.com/<your-username>/todoapp.soap-api.layered.git
+   git clone https://github.com/vishwamkumar/todoapp.soap-api.layered.git
    ```   
    ---
 
