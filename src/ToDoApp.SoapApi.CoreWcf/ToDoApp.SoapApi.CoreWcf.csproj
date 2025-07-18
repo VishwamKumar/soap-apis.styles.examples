@@ -6,10 +6,7 @@
 	<Authors>Vishwa Kumar</Authors>
 	<Company>Vishwam</Company>
 	<Product>ToDoApp</Product>
-  </PropertyGroup> 
-  <ItemGroup>
-    <None Include="nuget.config" />
-  </ItemGroup>
+  </PropertyGroup>
   <ItemGroup>
     <Using Include="CoreWCF" />
     <Using Include="CoreWCF.Configuration" />
